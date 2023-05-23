@@ -1,11 +1,48 @@
-#imgPerfil {
-    height: 200px;
-    width: 200px;
+header{
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+}
+
+#twoSectionHeader{
+    display: flex;
+    background-color: aquamarine;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#imageprofile {
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     border: 1px solid #000;
 }
 
-#contenedoraImgPerfil{
-    text-align: center;
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#oneSectionMain{
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
 }
 
+#twoSectionMain{
+    height: 100px;
+    width: 100px;
+    background-color: darkorchid;
+}
+
+aside{
+    display: flex;
+}
+
+#oneSectionAside{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+}
