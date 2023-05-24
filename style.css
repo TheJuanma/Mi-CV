@@ -1,17 +1,28 @@
+html{
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    background-color: #F1F3F4;
+}
+
+/* body{
+    background-color: yellowgreen;
+    width: 55%;
+    height: auto;
+} */
+
 header{
     display: flex;
-    background-color: aqua;
     justify-content: center;
+    border: 1px solid black;
+    justify-content: flex-start;
 }
 
-#twoSectionHeader{
-    display: flex;
-    background-color: aquamarine;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.textHeader{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI';
 }
-
 
 #imageprofile {
     height: 150px;
@@ -21,28 +32,46 @@ header{
 }
 
 main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    border: 1px solid black;
+    grid-auto-rows: minmax(210px, auto);
+}
+
+#oneSectionHeader{
+    width: 210px;
+}
+
+#twoSectionHeader{
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: row;
+    width: 400px;
 }
-#oneSectionMain{
+
+.one {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: aquamarine;
+    padding: 1px;
+    margin: 10px;
+    font-family: 'Segoe UI';
+  }
+
+.two {
+    grid-column: 1;
+    grid-row: 1 / 3;
     background-color: blueviolet;
-    height: 100px;
-    width: 100px;
+    margin: 10px;
+    font-family: 'Segoe UI';
 }
 
-#twoSectionMain{
-    height: 100px;
-    width: 100px;
-    background-color: darkorchid;
+.three{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: yellow;
+    margin: 10px;
+    font-family: 'Segoe UI';
 }
 
-aside{
-    display: flex;
-}
-
-#oneSectionAside{
-    height: 100px;
-    width: 100px;
-    background-color: coral;
-}
