@@ -1,77 +1,60 @@
-html{
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#main{
     display: flex;
     justify-content: center;
-    height: 80%;
-    background-color: #F1F3F4;
 }
 
-/* body{
-    background-color: yellowgreen;
-    width: 55%;
-    height: auto;
-} */
-
-header{
+.image-profile{
     display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    justify-content: flex-start;
-}
-
-.textHeader{
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-family: 'Segoe UI';
-}
-
-#imageprofile {
-    height: 150px;
-    width: 150px;
     border-radius: 50%;
-    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
 }
 
-main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px;
-    border: 1px solid black;
-    grid-auto-rows: minmax(210px, auto);
+.icons{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
 }
 
-#oneSectionHeader{
-    width: 210px;
+.marcos{
+    width: 320px;
+    padding: 20px;
+    background-color: #1E2736;
+    color: white;
 }
 
-#twoSectionHeader{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    width: 400px;
+.marcos--two{
+    width: 600px;
+    padding: 20px;
+    background-color: grey;
 }
 
-.one {
-    grid-column: 2;
-    grid-row: 1;
-    background-color: aquamarine;
-    padding: 1px;
-    margin: 10px;
-    font-family: 'Segoe UI';
-  }
-
-.two {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    background-color: blueviolet;
-    margin: 10px;
-    font-family: 'Segoe UI';
+.tittle{
+    border-bottom: 1px solid white;
 }
 
-.three{
-    grid-column: 2;
-    grid-row: 2;
-    background-color: yellow;
-    margin: 10px;
-    font-family: 'Segoe UI';
+.tittle--second{
+    border-bottom: 1px solid black;
 }
 
+.skills{
+    border-bottom: 1px solid white;
+}
+
+.profile-description{
+    border-bottom: 1px solid white;
+}
+
+h1{
+    color: #1E2736;
+    font-size: 30px;
+}
+
+
+#profession{
+    color: white;
+}
